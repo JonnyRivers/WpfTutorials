@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-WpfBasics", "01-WpfBasics\01-WpfBasics.csproj", "{6157DD3F-5EB4-458F-8E16-C8F5EE7357C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-WpfTreeViewsAndValueConverters", "02-TreeViewsAndValueConverters\WpfTreeViewsAndValueConverters\02-WpfTreeViewsAndValueConverters.csproj", "{B9A58DF1-0984-4CBC-AB25-2F1B00003308}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-WpfTreeViewsAndValueConverters", "02-WpfTreeViewsAndValueConverters\02-WpfTreeViewsAndValueConverters.csproj", "{B9A58DF1-0984-4CBC-AB25-2F1B00003308}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
