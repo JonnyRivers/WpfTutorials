@@ -16,24 +16,15 @@ namespace WpfDITestbed
     /// </summary>
     public partial class App : Application
     {
-        private IServiceProvider _serviceProvider;
-
         public App()
         {
-            var serviceCollection = new ServiceCollection();
-
-            serviceCollection.AddTransient<ITextService, TextService>();
-
-            serviceCollection.AddTransient<MainViewModel>();
-
-            _serviceProvider = serviceCollection.BuildServiceProvider();
         }
 
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
 
-            MainWindow = new MainWindow { DataContext = _serviceProvider.GetService<MainViewModel>() };
+            MainWindow = new MainWindow { DataContext = IoC.IoCContainer.Provider.GetService<MainViewModel>() };
             MainWindow.Show();
         }
     }
