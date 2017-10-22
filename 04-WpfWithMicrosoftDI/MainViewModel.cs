@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WpfDITestbed
+﻿namespace WpfDITestbed
 {
-    public class MainViewModel : BaseViewModel
+    public class MainViewModel : BaseViewModel, IMainViewModel
     {
         private ITextService _textService;
 

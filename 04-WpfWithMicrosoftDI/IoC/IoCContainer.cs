@@ -1,9 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+
+using Microsoft.Extensions.DependencyInjection;
 
 namespace WpfDITestbed.IoC
 {
@@ -30,7 +27,7 @@ namespace WpfDITestbed.IoC
 
             serviceCollection.AddTransient<ITextService, TextService>();
 
-            serviceCollection.AddTransient<MainViewModel>();
+            serviceCollection.AddTransient<IMainViewModel, MainViewModel>();
 
             return serviceCollection.BuildServiceProvider();
         }

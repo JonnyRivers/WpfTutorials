@@ -24,7 +24,7 @@ namespace WpfDITestbed
         {
             base.OnStartup(e);
 
-            MainWindow = new MainWindow { DataContext = IoC.IoCContainer.Provider.GetService<MainViewModel>() };
+            MainWindow = new MainWindow { DataContext = IoC.IoCContainer.Provider.GetService<IMainViewModel>() };
             MainWindow.Show();
         }
     }
