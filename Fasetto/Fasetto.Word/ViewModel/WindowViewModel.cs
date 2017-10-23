@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fasetto.Word.DataModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -16,13 +17,14 @@ namespace Fasetto.Word
         private int _outerMarginSize = 10;
         private int _windowsRadius = 10;
 
-
         public ICommand CloseCommand { get; set; }
         public ICommand MaximizeCommand { get; set; }
         public ICommand MenuCommand { get; set; }
         public ICommand MinimizeCommand { get; set; }
 
-        public int InnerContentPaddingSize { get; set; } = 6;
+        public ApplicationPage CurrentPage { get; set; } = ApplicationPage.Login;
+
+        public int InnerContentPaddingSize { get; set; } = 0;
 
         public Thickness InnerContentPadding { get { return new Thickness(InnerContentPaddingSize); } }
 
