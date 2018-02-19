@@ -31,8 +31,7 @@ namespace CollectionViewSource
             vm.Items.Add(new Person { Name = "Rando", DateOfBirth = new DateTime(year, month, day) });
         }
 
-        void GridViewColumnHeaderClickedHandler(object sender,
-                                            RoutedEventArgs e)
+        void GridViewColumnHeaderClickedHandler(object sender, RoutedEventArgs e)
         {
             var headerClicked = e.OriginalSource as GridViewColumnHeader;
             ListSortDirection direction;
